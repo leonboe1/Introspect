@@ -1,3 +1,4 @@
+#if !os(watchOS)
 import SwiftUI
 
 #if canImport(AppKit)
@@ -291,4 +292,5 @@ extension View {
         introspect(selector: TargetViewSelector.siblingContaining, customize: customize)
     }
 }
+#endif
 #endif
